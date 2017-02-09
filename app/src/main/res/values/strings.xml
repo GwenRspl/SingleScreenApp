@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">DogHeroForHire</string>
+    <string name="title">Dog Hero for Hire</string>
+    <string name="subtitle">Home Helper</string>
+    <string name="buttonText1">Save</string>
+    <string name="buttonText2">Find</string>
+    <string name="buttonText3">Send to phone</string>
+    <string name="buttonText4">Share</string>
+    <string name="adress">8 avenue du chien conquérant, 75013 Paris</string>
+    <string name="website">dogheroforhire.com</string>
+    <string name="phone">01 42 56 89 66</string>
+    <string name="time">Monday to Sunday : 7am - 11pm</string>
+    <string name="descriptionTitle">Description</string>
+    <string name="description_content">Need a hand to tend your garden ? Or to get rid of
+        unwanted visitors ? Hire one a Dog Hero ! He will diligently conduct any job you give
+        him. Don\'t get buried in snow this winter and please don\'t hurt your back shoveling. We
+        have a Dog Hero all ready to come to your rescue for snow removal. Do you have an elderly
+        or ill family member who needs some extra help in their home? We have a long list of
+        experienced Dog Heroes who can help take care of that loved one for a few hours or around
+        the clock - whatever is needed. Call Dog Hero For Hire for anything you need.</string>
+</resources>

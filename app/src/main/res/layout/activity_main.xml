@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/activity_main"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.example.android.singlescreenapp.MainActivity">
+
+
+
+    <LinearLayout
+        style="@style/Header">
+
+        <ImageView
+            android:id="@+id/window"
+            android:src="@drawable/window_dog"
+            style="@style/ImageHeader"/>
+
+        <LinearLayout
+            style="@style/BlockTextHeader">
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/TextHeader"
+                android:textSize="25sp"
+                android:text="@string/title" />
+
+            <TextView
+                android:id="@+id/subtitle"
+                style="@style/TextHeader"
+                android:textSize="14sp"
+                android:text="@string/subtitle" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        style="@style/Scrollview">
+
+        <LinearLayout
+            style="@style/BelowHeader"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/BelowHeader"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/Buttons">
+
+                    <ImageView
+                        android:src="@drawable/ic_star"
+                        style="@style/ButtonsImage"/>
+
+                    <TextView
+                        style="@style/ButtonsText"
+                        android:text="@string/buttonText1"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Buttons">
+
+                    <ImageView
+                        android:src="@drawable/ic_directions"
+                        style="@style/ButtonsImage"/>
+
+                    <TextView
+                        style="@style/ButtonsText"
+                        android:text="@string/buttonText2"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Buttons">
+
+                    <ImageView
+                        android:src="@drawable/ic_phone"
+                        style="@style/ButtonsImage"/>
+
+                    <TextView
+                        style="@style/ButtonsText"
+                        android:text="@string/buttonText3"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Buttons">
+
+                    <ImageView
+                        android:src="@drawable/ic_share"
+                        style="@style/ButtonsImage"/>
+
+                    <TextView
+                        style="@style/ButtonsText"
+                        android:text="@string/buttonText4"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/HorizontalItems">
+
+                <ImageView
+                    android:src="@drawable/ic_adress"
+                    style="@style/HorizontalItemsImage"/>
+
+                <TextView
+                    style="@style/HorizontalItemsText"
+                    android:text="@string/adress"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/HorizontalItems">
+
+                <ImageView
+                    android:src="@drawable/ic_website"
+                    style="@style/HorizontalItemsImage"/>
+
+                <TextView
+                    style="@style/HorizontalItemsText"
+                    android:text="@string/website"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/HorizontalItems">
+
+                <ImageView
+                    android:src="@drawable/ic_local_phone"
+                    style="@style/HorizontalItemsImage"/>
+
+                <TextView
+                    style="@style/HorizontalItemsText"
+                    android:text="@string/phone"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/HorizontalItems">
+
+                <ImageView
+                    android:src="@drawable/ic_access_time"
+                    style="@style/HorizontalItemsImage"/>
+
+                <TextView
+                    style="@style/HorizontalItemsText"
+                    android:text="@string/time"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Description">
+
+                <TextView
+                    style="@style/DescriptionTitle"
+                    android:text="@string/descriptionTitle"/>
+
+                <TextView
+                    style="@style/DescriptionText"
+                    android:text="@string/description_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/SlideshowLayout">
+
+                <ImageView
+                    style="@style/Slideshow"
+                    android:src="@drawable/pic1"/>
+
+                <ImageView
+                    style="@style/Slideshow"
+                    android:src="@drawable/pic4"/>
+
+
+                <ImageView
+                    style="@style/Slideshow"
+                    android:src="@drawable/pic2"/>
+
+                <ImageView
+                    style="@style/Slideshow"
+                    android:src="@drawable/pic3"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:id="@+id/activity_main"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical"
-              tools:context="com.example.android.singlescreenapp.MainActivity">
 
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/activity_main"
+            style="@style/Scrollview"
+            tools:context="com.example.android.singlescreenapp.MainActivity">
 
 
     <LinearLayout
-        style="@style/Header">
+        style="@style/LinearLayout">
 
         <ImageView
             android:id="@+id/window"
-            android:src="@drawable/window_dog"
-            style="@style/ImageHeader"/>
+            style="@style/ImageHeader"
+            android:src="@drawable/window_dog"/>
 
         <LinearLayout
             style="@style/BlockTextHeader">
@@ -23,148 +22,143 @@
             <TextView
                 android:id="@+id/title"
                 style="@style/TextHeader"
-                android:textSize="25sp"
-                android:text="@string/title" />
+                android:text="@string/title"
+                android:textSize="@dimen/title_size"/>
 
             <TextView
                 android:id="@+id/subtitle"
                 style="@style/TextHeader"
-                android:textSize="14sp"
-                android:text="@string/subtitle" />
+                android:text="@string/subtitle"
+                android:textSize="@dimen/subtitle_size"/>
 
         </LinearLayout>
 
-    </LinearLayout>
-
-    <ScrollView
-        style="@style/Scrollview">
 
         <LinearLayout
             style="@style/BelowHeader"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
             <LinearLayout
-                style="@style/BelowHeader"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    style="@style/Buttons">
-
-                    <ImageView
-                        android:src="@drawable/ic_star"
-                        style="@style/ButtonsImage"/>
-
-                    <TextView
-                        style="@style/ButtonsText"
-                        android:text="@string/buttonText1"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    style="@style/Buttons">
-
-                    <ImageView
-                        android:src="@drawable/ic_directions"
-                        style="@style/ButtonsImage"/>
-
-                    <TextView
-                        style="@style/ButtonsText"
-                        android:text="@string/buttonText2"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    style="@style/Buttons">
-
-                    <ImageView
-                        android:src="@drawable/ic_phone"
-                        style="@style/ButtonsImage"/>
-
-                    <TextView
-                        style="@style/ButtonsText"
-                        android:text="@string/buttonText3"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    style="@style/Buttons">
-
-                    <ImageView
-                        android:src="@drawable/ic_share"
-                        style="@style/ButtonsImage"/>
-
-                    <TextView
-                        style="@style/ButtonsText"
-                        android:text="@string/buttonText4"/>
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                style="@style/HorizontalItems">
+                style="@style/Buttons">
 
                 <ImageView
-                    android:src="@drawable/ic_adress"
-                    style="@style/HorizontalItemsImage"/>
+                    style="@style/ButtonsImage"
+                    android:src="@drawable/ic_star"/>
 
                 <TextView
-                    style="@style/HorizontalItemsText"
-                    android:text="@string/adress"/>
+                    style="@style/ButtonsText"
+                    android:text="@string/buttonText1"/>
 
             </LinearLayout>
 
             <LinearLayout
-                style="@style/HorizontalItems">
+                style="@style/Buttons">
 
                 <ImageView
-                    android:src="@drawable/ic_website"
-                    style="@style/HorizontalItemsImage"/>
+                    style="@style/ButtonsImage"
+                    android:src="@drawable/ic_directions"/>
 
                 <TextView
-                    style="@style/HorizontalItemsText"
-                    android:text="@string/website"/>
+                    style="@style/ButtonsText"
+                    android:text="@string/buttonText2"/>
 
             </LinearLayout>
 
             <LinearLayout
-                style="@style/HorizontalItems">
+                style="@style/Buttons">
 
                 <ImageView
-                    android:src="@drawable/ic_local_phone"
-                    style="@style/HorizontalItemsImage"/>
+                    style="@style/ButtonsImage"
+                    android:src="@drawable/ic_phone"/>
 
                 <TextView
-                    style="@style/HorizontalItemsText"
-                    android:text="@string/phone"/>
+                    style="@style/ButtonsText"
+                    android:text="@string/buttonText3"/>
 
             </LinearLayout>
 
             <LinearLayout
-                style="@style/HorizontalItems">
+                style="@style/Buttons">
 
                 <ImageView
-                    android:src="@drawable/ic_access_time"
-                    style="@style/HorizontalItemsImage"/>
+                    style="@style/ButtonsImage"
+                    android:src="@drawable/ic_share"/>
 
                 <TextView
-                    style="@style/HorizontalItemsText"
-                    android:text="@string/time"/>
+                    style="@style/ButtonsText"
+                    android:text="@string/buttonText4"/>
 
             </LinearLayout>
 
-            <LinearLayout
-                style="@style/Description">
+        </LinearLayout>
 
-                <TextView
-                    style="@style/DescriptionTitle"
-                    android:text="@string/descriptionTitle"/>
+        <LinearLayout
+            style="@style/HorizontalItems">
 
-                <TextView
-                    style="@style/DescriptionText"
-                    android:text="@string/description_content"/>
+            <ImageView
+                style="@style/HorizontalItemsImage"
+                android:src="@drawable/ic_adress"/>
 
-            </LinearLayout>
+            <TextView
+                style="@style/HorizontalItemsText"
+                android:text="@string/adress"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/HorizontalItems">
+
+            <ImageView
+                style="@style/HorizontalItemsImage"
+                android:src="@drawable/ic_website"/>
+
+            <TextView
+                style="@style/HorizontalItemsText"
+                android:text="@string/website"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/HorizontalItems">
+
+            <ImageView
+                style="@style/HorizontalItemsImage"
+                android:src="@drawable/ic_local_phone"/>
+
+            <TextView
+                style="@style/HorizontalItemsText"
+                android:text="@string/phone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/HorizontalItems">
+
+            <ImageView
+                style="@style/HorizontalItemsImage"
+                android:src="@drawable/ic_access_time"/>
+
+            <TextView
+                style="@style/HorizontalItemsText"
+                android:text="@string/time"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/Description">
+
+            <TextView
+                style="@style/DescriptionTitle"
+                android:text="@string/descriptionTitle"/>
+
+            <TextView
+                style="@style/DescriptionText"
+                android:text="@string/description_content"/>
+
+        </LinearLayout>
+
+        <HorizontalScrollView
+            style="@style/Scrollview">
 
             <LinearLayout
                 style="@style/SlideshowLayout">
@@ -188,8 +182,9 @@
 
             </LinearLayout>
 
-        </LinearLayout>
+        </HorizontalScrollView>
 
-    </ScrollView>
+    </LinearLayout>
 
-</LinearLayout>
+
+</ScrollView>
